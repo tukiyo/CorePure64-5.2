@@ -1,3 +1,4 @@
 *.iso
 extract
 iso_data/boot/rootfs64.gz
+rootfs64.gz*

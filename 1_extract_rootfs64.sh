@@ -2,8 +2,12 @@
 set -e
 
 if [ ! -d extract ];then
-   mkdir extract
+  mkdir extract
 fi
-
 cd extract
-zcat ../iso_data/boot/rootfs64.gz | sudo cpio -i -H newc -d
+
+if [ "$(uname -s)" == "Darwin" ];then
+  gzcat ../iso_data/boot/rootfs64.gz | sudo cpio -i
+else
+  zcat ../iso_data/boot/rootfs64.gz | sudo cpio -i -H newc -d
+fi

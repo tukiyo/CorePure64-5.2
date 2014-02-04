@@ -3,6 +3,12 @@ TinyCoreLinux5.2_x86_64_custom
 
 TinyCoreLinux5.2_x86_64を簡単に再構築するために環境を用意。
 
+実行環境
+==========
+
+* MacOS X + brew
+* CentOS 6.5 x86_64
+
 再構築方法
 ==========
 
